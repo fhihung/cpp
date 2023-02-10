@@ -12,21 +12,26 @@ int main(int argc, char const *argv[])
 {
     //argc la so luong phantu
     //exit(0); la thoat chuong trinh
-    if ( argc < 3){
-        cout << "THIEU DU LIEU\n";
-        exit(0);
-    }
-    else{
-        cout << "THUA DU LIEU\n";
-        exit(0);
-    }
-    string name = argv[1];
-    string age = argv[2];
+    // if ( argc < 3){
+    //     cout << "THIEU DU LIEU\n";
+    //     exit(0);
+    // }
+    // else{
+    //     cout << "THUA DU LIEU\n";
+    //     exit(0);
+    // }
+    // string name = argv[1];
+    // string age = argv[2];
+    string name, age;
     for (int i = 1; i < argc; ++i){
-        if(argv[i] == "-a"){
+        if(string(argv[i]) == string("-a")){
             age = argv[i+1];
+            // cout << "ok";
         }
-        else if(argv);
+        else if(string(argv[i]) == string("-n")){
+            name = argv[i+1];
+            // cout << "oke name";
+        }
     }
     
     cout << "Hello " << name << " " << age << " tuoi";
