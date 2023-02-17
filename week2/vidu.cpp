@@ -22,10 +22,11 @@ int main(int argc, char const *argv[])
     // }
     // string name = argv[1];
     // string age = argv[2];
-    string name, age;
+    string name;
+    int age;
     for (int i = 1; i < argc; ++i){
         if(string(argv[i]) == string("-a")){
-            age = argv[i+1];
+            age = stoi(argv[i+1]);
             // cout << "ok";
         }
         else if(string(argv[i]) == string("-n")){
@@ -34,6 +35,6 @@ int main(int argc, char const *argv[])
         }
     }
     
-    cout << "Hello " << name << " " << age << " tuoi";
+    cout << "Hello" << name << " " << age << " tuoi";
     return 0;
 }
