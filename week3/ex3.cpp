@@ -10,7 +10,7 @@ int main(int argc, char const *argv[])
         chan.push_back(i);
     }
     for(int i : chan){
-        cout << i<< " ";
+        cout << i << " ";
     }
 
     return 0;
