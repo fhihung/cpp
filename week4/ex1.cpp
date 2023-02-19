@@ -34,6 +34,7 @@ int main(int argc, char const *argv[])
     cout << float(tong/dem) << endl;
     //ep kieu cach khac
     //cout << tong/dem*1.0 << endl;
+    //inFile.close() DONG STREAM 
     return 0;
 }
 
