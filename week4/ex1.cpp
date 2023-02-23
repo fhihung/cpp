@@ -7,7 +7,9 @@
 using namespace std;
 int main(int argc, char const *argv[])
 {
+    //KHAI BAO BIEN TEN LA "inFile"
     ifstream inFile;
+    //MO FILE "inFile"
     inFile.open("/Users/fhihung/Documents/workspaces/cpp/week4/data.txt");
     //KIEM TRA FILE CO MO DUOC HAY KHONG
     //inFile.is_open kiem tra xem file co mo duoc hay khong, true neu file mo duoc
@@ -18,7 +20,9 @@ int main(int argc, char const *argv[])
     int x;
     int tong = 0;
     int dem = 0;
+    //KHAI BAO BIEN VECTO TEN LA "vec"
     vector<int> vec;
+    //DAY DU LIEU VAO BIEN "vec"
     while (inFile >> x){
         tong = tong + x;
         dem++;
