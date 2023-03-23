@@ -30,7 +30,7 @@ int main(int argc, char const *argv[]) {
         if(argv[1] == "-a"){
             age = argv[i+1];
         }
-        else cout << ""
+        else cout << "";
     }
 
     cout << "Hello " << name << " " << age << " tuoi" << endl;

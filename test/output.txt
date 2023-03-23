@@ -1,0 +1,1 @@
+Nearest node to 1 is 256187776 with distance 0

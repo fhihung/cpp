@@ -65,7 +65,8 @@ int main() {
     while (getline(inFile, line)) {
         //Khoi tao luong string
         stringstream ss(line);
-        cout << line << " ";
+        // cout << line << " ";
+        
         //Khoi tao vector play_info
         vector<string> player_info;
         //Khoi toa bien info

@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.java": "java",
+			"cmath": "cpp",
+			"iostream": "cpp",
+			"iosfwd": "cpp",
+			"vector": "cpp",
+			"map": "cpp"
+		}
+	}
+}
