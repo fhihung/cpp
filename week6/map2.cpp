@@ -11,7 +11,7 @@ using namespace std;
 int main(int argc, char const *argv[])
 {
     ifstream inFile;
-    inFile.open("/Users/fhihung/Documents/workspaces/cpp/week6/datashowbiz.txt");
+    inFile.open("/Users/fhihung/Documents/workspaces/learning/cpp/week6/datashowbiz.txt");
     if(!inFile.is_open()){
         cout << " Khong mo duoc file data";
         exit(0);
@@ -26,7 +26,7 @@ int main(int argc, char const *argv[])
         iss >> token;
         iss >> que;
         iss >> token;
-        cout << token << " " ;
+        // cout << token << " " ;
         showbiz[que] += stoi(token);
         // for(auto x : showbiz){
         //     cout << x.first << " " << x.second << endl;

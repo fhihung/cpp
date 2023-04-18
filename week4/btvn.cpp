@@ -17,7 +17,7 @@ int main(int argc, char const *argv[])
     //khai bao ten bien
     ifstream inFile;
     //mo file de doc
-    inFile.open("/Users/fhihung/Documents/workspaces/cpp/week4/databtvn.txt");
+    inFile.open("/Users/fhihung/Documents/workspaces/learning/cpp/week4/databtvn.txt");
     if(!inFile.is_open()){
         cout << " Khong mo duoc file data";
         exit(0);

@@ -1,1 +1,2 @@
-Nearest node to 1 is 256187776 with distance 0
+Nearest node to 3 is 718 with distance 0.458912
+Farthest node to 3 is 627 with distance 115.676

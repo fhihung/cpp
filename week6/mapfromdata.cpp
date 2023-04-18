@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
     ifstream inFile;
     map<string, int> best;
     
-    inFile.open("/Users/fhihung/Documents/workspaces/cpp/week6/data.txt");
+    inFile.open("/Users/fhihung/Documents/workspaces/learning/cpp/week6/data.txt");
     if(!inFile.is_open()){
         cout << "Khong mo duoc file";
         exit(0);
