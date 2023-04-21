@@ -15,9 +15,7 @@ class Animal{
         int age;
     Animal(int id,string name, string sex, int age): id(id), name(name),sex(sex),age(age){};
 
-    virtual void displayInfo(){
-        cout << "ANIMAL: " << name << " " << sex << " " << age; 
-    }
+    virtual void displayInfo() = 0;
 };
 
 class Dog : public Animal{
@@ -43,17 +41,15 @@ class Goose : public Animal{
 
 int main(int argc, char const *argv[])
 {
-    Animal ani(1,"name","m",8);
+    // Animal ani(1,"name","m",8);
     Dog dog(2,"cu","m",2,"den","Hung");
     Goose goose(2,"cu","m",2,2.1,2.4);
 
     vector<Animal> zoo;
-    zoo.push_back(ani);
     zoo.push_back(dog);
     zoo.push_back(goose);
 
     vector<Animal*> zoop;
-    zoop.push_back(&ani);
     zoop.push_back(&dog);
     zoop.push_back(&goose);
     for (auto x : zoop){
