@@ -20,10 +20,10 @@ class SinhVien{
 };
 class SV_CNTT : public SinhVien{
     public:
-        string cert;
-         SV_CNTT (int id, string name, string sex, float gpa, string cert): SinhVien(id, name, sex, gpa),cert(cert){};
-   void displayInfo()override{
-        cout << "SV_CNTT: " << name << " " << sex << " " << gpa; 
+        float toeic;
+         SV_CNTT (int id, string name, string sex, float gpa, float toeic): SinhVien(id, name, sex, gpa),toeic(toeic){};
+    void displayInfo()override{
+        cout << "SV_CNTT: " << endl << "name: " << name << endl << "sex: " << sex << endl << "gpa: " << gpa << endl; 
     }
     string getString() const override{
         stringstream ss;
@@ -33,10 +33,10 @@ class SV_CNTT : public SinhVien{
 };
 class SV_CNTTVJ : public SinhVien{
     public:
-        string cert;
-         SV_CNTTVJ (int id, string name, string sex, float gpa, string cert): SinhVien(id, name, sex, gpa),cert(cert){};
-   void displayInfo()override{
-        cout << "SV_CNTTVJ: " << name << " " << sex << " " << gpa; 
+        string jlpt;
+         SV_CNTTVJ (int id, string name, string sex, float gpa, string jlpt): SinhVien(id, name, sex, gpa),jlpt(jlpt){};
+    void displayInfo()override{
+        cout << "SV_CNTTVJ: " << endl << "name: " << name << endl << "sex: " << sex << endl << "gpa: " << gpa << endl; 
     }
     string getString() const override{
         stringstream ss;
@@ -46,10 +46,10 @@ class SV_CNTTVJ : public SinhVien{
 };
 class SV_CNTT_TALENT : public SinhVien{
     public:
-        string cert;
-         SV_CNTT_TALENT (int id, string name, string sex, float gpa, string cert): SinhVien(id, name, sex, gpa),cert(cert){};
-   void displayInfo()override{
-        cout << "SV_CNTT_TALENT: " << name << " " << sex << " " << gpa; 
+        float ielts;
+         SV_CNTT_TALENT (int id, string name, string sex, float gpa, float ielts): SinhVien(id, name, sex, gpa),ielts(ielts){};
+    void displayInfo()override{
+        cout << "SV_CNTT_TALENT: " << endl << "name: " << name << endl << "sex: " << sex << endl << "gpa: " << gpa << endl; 
     }
     string getString() const override{
         stringstream ss;
@@ -57,3 +57,18 @@ class SV_CNTT_TALENT : public SinhVien{
         return ss.str();
     }
 };
+ostream& operator << (ostream& os, const SinhVien& a){
+    os << a.getString();
+    return os;
+}
+int main(int argc, char const *argv[])
+{
+    SV_CNTT sa1(1,"Hung","m",3.6,980);
+    SV_CNTTVJ sam2(2,"Duy","m",2.0,"N4");
+    SV_CNTT_TALENT sam3(3,"Giang","m",3.9,8.5);
+
+    sa1.displayInfo();
+    sam2.displayInfo();
+    sam3.displayInfo();
+    return 0;
+}
