@@ -37,8 +37,5 @@ class FullTime : public Employee{
 };
 
 int main(){
-    FullTime a{
-        
-    };
 
 }
