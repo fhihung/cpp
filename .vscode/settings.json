@@ -110,6 +110,7 @@
         "shared_mutex": "cpp",
         "spanstream": "cpp",
         "stacktrace": "cpp",
-        "syncstream": "cpp"
+        "syncstream": "cpp",
+        "__verbose_abort": "cpp"
     }
 }
